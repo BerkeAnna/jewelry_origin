@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ékszeres cucc</title>
+  <link rel=stylesheet href="style.css">
+</head>
+<body>
+<header>
+  <h1>…a dobozok biztonságos mélyére rejtett ékszerek olykor bizonyára vágynak rá, hogy jöjjön egy tolvaj, és ellopja őket…</h1>
+</header>
+
+<nav>
+  <ul>
+    <ol>
+      <a href="Bánya.html" class="navbut">Bánya</a>
+    </ol>
+    <ol>
+      <a href="Szallító.html" class="navbut">Szállító</a>
+    </ol>
+    <ol>
+      <a href="Csiszolóműhely.html" class="navbut">Csiszolóműhely </a>
+    </ol>
+  </ul>
+</nav>
+
+<main>
+  <h1>Csiszolóműhelyből származó adatok</h1>
+
+
+  <!--ide szűrőt is raknék rá, vagy inkább rendezőt (A-Z)-->
+
+  <form method="POST" action="BányaFeltölt.html" enctype="multipart/form-data">
+    <div class="centerForm">
+
+      <div >
+        <label for=azonosito>Azonosító: </label>
+      </div>
+      <input type="text" id="azonosito" name="azonosito" maxlength="30" placeholder="Azonosító..." required /> <br/>
+
+      <div >
+        <label for=atvetelihely>Átvétel helye: </label>
+      </div>
+      <input type="text" id="atvetelihely" name="atvetelihely" maxlength="30" placeholder="Átvélet helye..." required /> <br/>
+
+      <div >
+        <label for=atveteliido>Átvétel ideje: </label>
+      </div>
+      <input type="date" id="atveteliido" name="atveteliido"  required /> <br/>
+
+      <div >
+        <label for=atvetttermek>Átvett termék </label>
+      </div>
+      <input type="text" id="atvetttermek" name="atvetttermek" maxlength="30" placeholder="Átvett termék ..." required /> <br/>
+
+
+      <div >
+        <label for=termekadatatvett>Átvett termék adatai: </label>
+      </div>
+      <input type="text" id="termekadatatvett" name="termekadatatvett" maxlength="30" placeholder="Átvett termék adatai ..." required /> <br/>
+
+      <div >
+        <label for=megmunkalttermekadatai>megmunkalt termék adatai: </label>
+      </div>
+      <input type="text" id="megmunkalttermekadatai" name="megmunkalttermekadatai" maxlength="30" placeholder="Megmunkált termék adatai ..." required /> <br/>
+
+
+      <input type="submit" class="button" name= "ujBanyaAdat" value="Feltöltés  ">  <br/>
+  </form>
+
+
+</main>
+
+
+
+</body>
+</html>
